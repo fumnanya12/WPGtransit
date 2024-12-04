@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Winnipeg Transit</title>
+</head>
+<body>
+    <h1>Find My Location</h1>
+    <button onclick="getLocation()">Get Transit schedule</button>
+    <p id="status"></p>
+    <p id="coordinates"></p>
+
+
+    <h1>Winnipeg Transit</h1>
+    <p>Current longitude: {{ long|safe }}</p>
+    <p>Current latitude: {{ lat|safe }}</p>
+    {{ myhtml|safe }}
+    
+<script src="{{url_for('static', filename='index.js')}}"></script>
+
+</body>
+</html> 
